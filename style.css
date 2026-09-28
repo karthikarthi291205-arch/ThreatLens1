@@ -1,0 +1,1308 @@
+/* ================================
+   GLOBAL STYLES
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #07111f;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   NAVIGATION BAR
+================================ */
+
+header {
+    width: 100%;
+    background: #081525;
+    border-bottom: 1px solid #19304a;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #00e5ff;
+}
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #d8e5f0;
+    text-decoration: none;
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00e5ff;
+}
+
+
+/* ================================
+   HERO SECTION
+================================ */
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        radial-gradient(circle at 80% 40%, #123c59 0%, transparent 35%),
+        linear-gradient(135deg, #07111f, #0a1c2e);
+
+    padding: 80px 30px;
+}
+
+.hero-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.tagline {
+    color: #00e5ff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #00e5ff;
+}
+
+.hero-text {
+    max-width: 600px;
+
+    color: #b8c8d8;
+    font-size: 18px;
+
+    margin-bottom: 35px;
+}
+
+
+/* ================================
+   BUTTONS
+================================ */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: #00e5ff;
+    color: #06101c;
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px #00e5ff44;
+}
+
+.secondary-btn {
+    border: 1px solid #00e5ff;
+    color: #00e5ff;
+}
+
+.secondary-btn:hover {
+    background: #00e5ff;
+    color: #06101c;
+}
+
+
+/* ================================
+   FEATURES
+================================ */
+
+.features {
+    padding: 90px 30px;
+
+    background: #081525;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title p {
+    color: #00e5ff;
+
+    font-size: 13px;
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+}
+
+
+/* Feature Cards */
+
+.feature-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.feature-card {
+    background: #0d2033;
+
+    border: 1px solid #1a3852;
+
+    border-radius: 10px;
+
+    padding: 30px;
+
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #00e5ff;
+
+    box-shadow: 0 10px 30px #00000055;
+}
+
+.icon {
+    font-size: 35px;
+
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 21px;
+
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: #aebdca;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+.feature-card a {
+    color: #00e5ff;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* ================================
+   ABOUT SECTION
+================================ */
+
+.about {
+    padding: 100px 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #081525,
+            #0b2438
+        );
+}
+
+.about-content {
+    max-width: 800px;
+    margin: auto;
+
+    text-align: center;
+}
+
+.small-title {
+    color: #00e5ff;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.about h2 {
+    font-size: 42px;
+
+    margin-bottom: 20px;
+}
+
+.about h2 span {
+    color: #00e5ff;
+}
+
+.about p:not(.small-title) {
+    color: #b8c8d8;
+
+    margin-bottom: 30px;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    background: #050d17;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-top: 1px solid #19304a;
+}
+
+footer p {
+    color: #8293a4;
+
+    font-size: 13px;
+
+    margin-top: 10px;
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .feature-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about h2 {
+        font-size: 32px;
+    }
+}
+/* ================================
+   CYBER THREATS PAGE
+================================ */
+
+.page-header {
+    text-align: center;
+
+    padding: 100px 30px 70px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #123c59 0%,
+            transparent 45%
+        ),
+        #07111f;
+}
+
+.page-header > p:first-child {
+    color: #00e5ff;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.page-header h1 {
+    font-size: 48px;
+
+    margin-bottom: 20px;
+}
+
+.page-description {
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #aebdca;
+
+    font-size: 17px;
+}
+
+
+/* Threat Cards */
+
+.threat-section {
+    padding: 80px 30px;
+
+    background: #081525;
+}
+
+.threat-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.threat-card {
+    background: #0d2033;
+
+    border: 1px solid #1a3852;
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    transition: 0.3s;
+}
+
+.threat-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #00e5ff;
+
+    box-shadow: 0 12px 30px #00000055;
+}
+
+.threat-icon {
+    font-size: 42px;
+
+    margin-bottom: 18px;
+}
+
+.threat-card h2 {
+    font-size: 24px;
+
+    margin-bottom: 12px;
+}
+
+.threat-card p {
+    color: #b8c8d8;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+.threat-card h4 {
+    color: #00e5ff;
+
+    margin-bottom: 8px;
+}
+
+.threat-card ul {
+    padding-left: 20px;
+
+    color: #c1cfdb;
+
+    margin-bottom: 20px;
+}
+
+.threat-card li {
+    margin-bottom: 5px;
+}
+
+.protection {
+    padding: 15px;
+
+    background: #081a2a;
+
+    border-left: 3px solid #00e5ff;
+
+    color: #aebdca;
+
+    font-size: 13px;
+}
+
+.protection strong {
+    color: #ffffff;
+}
+
+
+/* Responsive Threat Page */
+
+@media (max-width: 900px) {
+
+    .threat-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .page-header h1 {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .threat-container {
+        grid-template-columns: 1fr;
+    }
+
+    .page-header h1 {
+        font-size: 34px;
+    }
+
+    .page-header {
+        padding: 70px 20px 50px;
+    }
+}
+/* ================================
+   PHISHING PAGE
+================================ */
+
+.phishing-info {
+    padding: 80px 30px;
+    background: #081525;
+}
+
+.info-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.info-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.info-content p {
+    color: #b8c8d8;
+    margin-bottom: 15px;
+}
+
+
+/* Warning Cards */
+
+.warning-section {
+    padding: 80px 30px;
+    background: #07111f;
+}
+
+.warning-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.warning-card {
+    padding: 25px;
+
+    background: #0d2033;
+
+    border: 1px solid #1a3852;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.warning-card:hover {
+    transform: translateY(-7px);
+    border-color: #00e5ff;
+}
+
+.warning-card span {
+    font-size: 35px;
+}
+
+.warning-card h3 {
+    margin: 15px 0 10px;
+}
+
+.warning-card p {
+    color: #aebdca;
+    font-size: 14px;
+}
+
+
+/* Phishing Example */
+
+.phishing-test {
+    padding: 90px 30px;
+    background: #081525;
+}
+
+.email-example {
+    max-width: 700px;
+    margin: auto;
+
+    background: #f4f7fa;
+    color: #17202a;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 15px 40px #00000055;
+}
+
+.email-header {
+    padding: 18px 25px;
+
+    background: #dce5ed;
+
+    border-bottom: 1px solid #c1ccd5;
+}
+
+.email-body {
+    padding: 30px;
+}
+
+.email-body p {
+    margin-bottom: 15px;
+}
+
+.email-body hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ccd5dc;
+}
+
+.email-body button {
+    padding: 12px 22px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #1769aa;
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.email-body button:hover {
+    opacity: 0.85;
+}
+
+#phishing-result {
+    margin-top: 20px;
+
+    font-weight: bold;
+}
+
+
+/* Safety Section */
+
+.safety-section {
+    padding: 90px 30px;
+    background: #0a1c2e;
+}
+
+.safety-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.safety-content h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.safety-content ul {
+    padding-left: 25px;
+}
+
+.safety-content li {
+    color: #b8c8d8;
+    margin-bottom: 12px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .warning-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .warning-container {
+        grid-template-columns: 1fr;
+    }
+
+    .email-body {
+        padding: 20px;
+    }
+
+    .safety-content h2 {
+        font-size: 32px;
+    }
+}
+/* ================================
+   PASSWORD SECURITY PAGE
+================================ */
+
+.password-tips {
+    padding: 80px 30px;
+    background: #081525;
+}
+
+.password-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.password-card {
+    padding: 30px;
+
+    background: #0d2033;
+
+    border: 1px solid #1a3852;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.password-card:hover {
+    transform: translateY(-7px);
+    border-color: #00e5ff;
+}
+
+.password-card span {
+    font-size: 36px;
+}
+
+.password-card h3 {
+    margin: 15px 0 10px;
+}
+
+.password-card p {
+    color: #aebdca;
+    font-size: 14px;
+}
+
+
+/* Password Checker */
+
+.password-checker {
+    padding: 90px 30px;
+    background: #07111f;
+}
+
+.checker-box {
+    max-width: 650px;
+    margin: auto;
+
+    padding: 35px;
+
+    background: #0d2033;
+
+    border: 1px solid #1a3852;
+
+    border-radius: 12px;
+}
+
+.checker-box > p {
+    color: #b8c8d8;
+    text-align: center;
+}
+
+.checker-note {
+    font-size: 13px;
+    margin: 10px 0 25px;
+}
+
+.password-input {
+    display: flex;
+    gap: 10px;
+}
+
+.password-input input {
+    flex: 1;
+
+    padding: 14px;
+
+    border: 1px solid #34516b;
+    border-radius: 6px;
+
+    background: #07111f;
+    color: white;
+
+    outline: none;
+}
+
+.password-input input:focus {
+    border-color: #00e5ff;
+}
+
+.password-input button {
+    padding: 0 20px;
+
+    border: 1px solid #00e5ff;
+    border-radius: 6px;
+
+    background: transparent;
+    color: #00e5ff;
+
+    cursor: pointer;
+}
+
+.password-input button:hover {
+    background: #00e5ff;
+    color: #07111f;
+}
+
+
+/* Strength Bar */
+
+.strength-bar {
+    width: 100%;
+    height: 8px;
+
+    margin: 25px 0 15px;
+
+    background: #182d40;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+#strengthFill {
+    width: 0%;
+    height: 100%;
+
+    transition: 0.3s;
+}
+
+#strengthText {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+#passwordFeedback {
+    padding-left: 20px;
+
+    color: #aebdca;
+
+    font-size: 14px;
+}
+
+#passwordFeedback li {
+    margin-bottom: 8px;
+}
+
+
+/* Best Practices */
+
+.best-practices {
+    padding: 90px 30px;
+    background: #0a1c2e;
+}
+
+.best-practice-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.best-practice-content h2 {
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.checklist {
+    text-align: left;
+
+    background: #0d2033;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    border: 1px solid #1a3852;
+}
+
+.checklist p {
+    color: #c1cfdb;
+    padding: 10px 0;
+
+    border-bottom: 1px solid #1a3852;
+}
+
+.checklist p:last-child {
+    border-bottom: none;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .password-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .password-container {
+        grid-template-columns: 1fr;
+    }
+
+    .checker-box {
+        padding: 25px 20px;
+    }
+
+    .password-input {
+        flex-direction: column;
+    }
+
+    .password-input button {
+        padding: 12px;
+    }
+
+    .best-practice-content h2 {
+        font-size: 30px;
+    }
+}
+/* ================================
+   CYBERSECURITY TOOLS PAGE
+================================ */
+
+.tools-section {
+    padding: 90px 30px;
+    background: #081525;
+}
+
+.tool-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.tool-card {
+    padding: 30px;
+
+    background: #0d2033;
+
+    border: 1px solid #1a3852;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.tool-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #00e5ff;
+
+    box-shadow: 0 12px 30px #00000055;
+}
+
+.tool-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.tool-category {
+    display: inline-block;
+
+    color: #00e5ff;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 10px;
+}
+
+.tool-card h2 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.tool-card p {
+    color: #b8c8d8;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+.tool-card h4 {
+    color: #00e5ff;
+
+    margin-bottom: 8px;
+}
+
+.tool-card ul {
+    padding-left: 20px;
+
+    color: #c1cfdb;
+
+    margin-bottom: 20px;
+}
+
+.tool-card li {
+    margin-bottom: 5px;
+}
+
+.tool-level {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: #081a2a;
+
+    border: 1px solid #24445d;
+
+    color: #b8c8d8;
+
+    font-size: 12px;
+}
+
+
+/* Responsible Use */
+
+.responsible-section {
+    padding: 90px 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #081525,
+            #0b2438
+        );
+}
+
+.responsible-content {
+    max-width: 800px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.responsible-content h2 {
+    font-size: 40px;
+
+    margin-bottom: 20px;
+}
+
+.responsible-content p:not(.small-title) {
+    color: #b8c8d8;
+
+    margin-bottom: 15px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .tool-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .tool-container {
+        grid-template-columns: 1fr;
+    }
+
+    .responsible-content h2 {
+        font-size: 32px;
+    }
+}
+/* ================================
+   CYBERSECURITY QUIZ
+================================ */
+
+.quiz-section {
+    padding: 90px 30px;
+
+    background: #081525;
+
+    min-height: 600px;
+}
+
+.quiz-box {
+    max-width: 800px;
+
+    margin: auto;
+
+    padding: 35px;
+
+    background: #0d2033;
+
+    border: 1px solid #1a3852;
+
+    border-radius: 12px;
+}
+
+.question {
+    padding: 25px 0;
+
+    border-bottom: 1px solid #1a3852;
+}
+
+.question:first-child {
+    padding-top: 0;
+}
+
+.question h3 {
+    margin-bottom: 18px;
+
+    font-size: 19px;
+}
+
+.question label {
+    display: block;
+
+    padding: 10px 15px;
+
+    margin-bottom: 8px;
+
+    background: #081a2a;
+
+    border: 1px solid #1a3852;
+
+    border-radius: 6px;
+
+    color: #c1cfdb;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.question label:hover {
+    border-color: #00e5ff;
+}
+
+.question input {
+    margin-right: 10px;
+}
+
+
+/* Quiz Button */
+
+.quiz-button {
+    display: block;
+
+    margin: 30px auto 0;
+
+    padding: 14px 30px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #00e5ff;
+
+    color: #06101c;
+
+    font-weight: bold;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.quiz-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 25px #00e5ff44;
+}
+
+
+/* Quiz Result */
+
+#quiz-result {
+    margin-top: 25px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    border-radius: 8px;
+}
+/* ================================
+   MOBILE MENU
+================================ */
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: #00e5ff;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* Mobile Navigation */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        padding: 20px;
+        background: #07111f;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+}
